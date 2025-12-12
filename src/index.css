@@ -10,12 +10,13 @@
 }
 
 body{
+	font-family: 'Bright', 'sans-serif';
 	background-color: var(--white);
-	margin: 0
+	margin: 0;
+	padding: 0;
 }
 
 nav{
-	font-family: 'Bright', 'sans-serif';
 	display: flex;
 	margin-top: 50px;
 }
@@ -34,4 +35,14 @@ nav > button{
 	background-color: var(--pink);
 	color: var(--crimson);
 	border: 4px solid var(--white);
+}
+
+.main-content{
+	margin: 0;
+	background-color: var(--pink);
+	height: 85vh;
+}
+
+.main-content > h1{
+	margin: 0;
 }
