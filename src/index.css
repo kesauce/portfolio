@@ -1,0 +1,18 @@
+:root{
+	--white: #f7eeed;
+	--pink: #fcc0c5;
+	--crimson: #b84c65;
+}
+
+@font-face {
+  font-family: 'Bright';
+  src: url('./assets/font/Bright.otf');
+}
+
+body{
+	background-color: var(--white);
+}
+
+nav{
+	font-family: 'Bright', 'sans-serif';
+}
