@@ -11,8 +11,27 @@
 
 body{
 	background-color: var(--white);
+	margin: 0
 }
 
 nav{
 	font-family: 'Bright', 'sans-serif';
+	display: flex;
+	margin-top: 50px;
+}
+
+nav > button{
+	font-family: 'Bright', 'sans-serif';
+	font-size: x-large;
+	padding: 5px 10px;
+	flex: 1;
+	max-width: 200px;
+
+	border-radius: 0px 15px 0px 0px;
+	position: relative;
+	margin-left: -12px;
+
+	background-color: var(--pink);
+	color: var(--crimson);
+	border: 4px solid var(--white);
 }
