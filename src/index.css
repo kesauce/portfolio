@@ -22,7 +22,6 @@ body{
 
 nav{
 	display: flex;
-	/* margin-top: 30px; */
 	position: relative;
 	height: 100px;
 	align-items: flex-end;
@@ -45,7 +44,7 @@ nav > button{
 
 	transition:
 		transform 200ms ease,
-		background-color 200ms ease,
+		/* background-color 200ms ease, */
 		padding-bottom 200ms ease,
 		margin-bottom 200ms ease;
 }
@@ -53,12 +52,13 @@ nav > button{
 nav > button:hover{
 	cursor: pointer;
 	transform: translateY(-12px);
-	padding-bottom: 20px;
+	padding-bottom: 24px;
   	margin-bottom: -12px;
 }
 
 .active-page{
-	border-bottom: 4px solid var(--pink);
+	padding-bottom: 24px;
+	border-bottom: none;
 	background-color: var(--pink);
 	color: var(--crimson);
 }

@@ -22,9 +22,7 @@ export default function Navbar({ activePage, handleClick }) {
 				onMouseEnter={() => setHovered(page)}
 				onMouseLeave={() => setHovered(null)}
 				className={isActive ? 'active-page' : undefined}
-				style={{
-				zIndex: zIndex,
-				}}
+				style={{ zIndex: zIndex }}
 			>
 				{page}
 			</button>
