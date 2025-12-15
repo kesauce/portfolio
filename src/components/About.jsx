@@ -11,7 +11,9 @@ export default function About() {
 			</p>
 		</div>
 		<hr style={{borderTop: '2px solid var(--crimson)', width: '80%', color:'var(--crimson)'}}/>
-        <Languages />
+		<div>
+			<Languages />
+		</div>
     </section>
   )
 }
