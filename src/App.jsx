@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import NavBar from './components/Navbar.jsx'
 import Home from './components/Home.jsx'
-import AboutMe from './components/AboutMe.jsx';
+import About from './components/About.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 
@@ -19,7 +19,7 @@ export default function App() {
 			pageComponent = <Home />;
 			break;
 		case 'About':
-			pageComponent = <AboutMe />;
+			pageComponent = <About />;
 			break;
 		case 'Projects':
 			pageComponent = <Projects />
