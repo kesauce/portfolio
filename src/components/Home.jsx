@@ -1,8 +1,8 @@
-export default function Body() {
+export default function Home() {
 
   return (
     <section className='main-content'>
-        <h1>this is the body</h1>
+        <h1>this is the home</h1>
     </section>
   )
 }

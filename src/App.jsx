@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import NavBar from './components/Navbar.jsx'
-import Body from './components/Body.jsx'
+import Home from './components/Home.jsx'
+import AboutMe from './components/AboutMe.jsx';
+import Projects from './components/Projects.jsx';
+import Contact from './components/Contact.jsx';
 
 export default function App() {
 	const [pageActive, setPageActive] = useState('Home');
@@ -9,10 +12,30 @@ export default function App() {
 		setPageActive(newPage);
 	}
 
+	let pageComponent;
+
+	switch (pageActive){
+		case 'Home':
+			pageComponent = <Home />;
+			break;
+		case 'About Me':
+			pageComponent = <AboutMe />;
+			break;
+		case 'Projects':
+			pageComponent = <Projects />
+			break;
+		case 'Contact':
+			pageComponent= <Contact />
+			break;
+		default:
+			pageComponent = <Home />;
+			break;
+	}
+
   	return (
     	<div className='page'>
 			<NavBar activePage={pageActive} handleClick={changePage}/>
-    		<Body />
+			{pageComponent}
 		</div>
   	)
 }
