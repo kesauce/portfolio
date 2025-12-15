@@ -1,4 +1,5 @@
 import Languages from "./Languages";
+import Skills from "./Skills";
 
 export default function About() {
 
@@ -11,8 +12,9 @@ export default function About() {
 			</p>
 		</div>
 		<hr style={{borderTop: '2px solid var(--crimson)', width: '80%', color:'var(--crimson)'}}/>
-		<div>
+		<div className='list-sections'>
 			<Languages />
+			<Skills />
 		</div>
     </section>
   )

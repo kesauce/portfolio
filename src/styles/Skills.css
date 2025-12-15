@@ -1,0 +1,27 @@
+.skills-list{
+    margin: 0px 10px;
+}
+
+.skills-list > ul{
+    list-style: none;
+    font-size: large;
+}
+
+.skills-list li{
+    margin: 10px 20px;
+}
+
+.sub-skill{
+    font-size: medium;
+}
+
+.github-link {
+  color: var(--crimson);
+  margin-right: 8px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.github-link:hover {
+  opacity: 0.5;
+  transform: translateX(0);
+}
