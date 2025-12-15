@@ -52,7 +52,6 @@ nav > button{
 
 nav > button:hover{
 	cursor: pointer;
-	background-color: black;
 	transform: translateY(-12px);
 	padding-bottom: 20px;
   	margin-bottom: -12px;
