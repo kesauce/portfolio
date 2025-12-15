@@ -4,6 +4,13 @@
 	--crimson: #b84c65;
 }
 
+.work-sans-p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Bright';
   src: url('./assets/font/Bright.otf');
@@ -29,7 +36,7 @@ nav{
 
 nav > button{
 	font-family: 'Bright', 'sans-serif';
-	font-size: xx-large;
+	font-size: x-large;
 	padding: 5px 10px;
 	flex: 1;
 	max-width: 200px;
@@ -67,8 +74,113 @@ nav > button:hover{
 	margin: 0;
 	background-color: var(--pink);
 	height: 85vh;
+	overflow: scroll;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .main-content > h1{
 	margin: 0;
 }
+
+.introduction{
+	height: 100%;
+	width: 50%;
+	color: var(--crimson);
+	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+
+	padding: 0px 10px;
+}
+
+.introduction > h1{
+	font-size: 7rem;
+	margin: 0;
+}
+
+.introduction > h6{
+	font-size: 1rem;
+	margin: 0;
+	margin-top: -20px;
+}
+
+.introduction > p{
+	font-size: 1.2rem;
+	text-align: justify;
+}
+
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid var(--crimson);
+  text-transform: uppercase;
+  color: var(--crimson);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+
+  margin-top: 40px;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% + 2px);
+  background-color: var(--pink);
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: var(--pink);
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn2:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn2:hover {
+  border: 2px solid var(--crimson);
+}
+
+.btn2 .spn2 {
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.portrait{
+	width: 25%;
+}
+                

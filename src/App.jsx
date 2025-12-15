@@ -18,7 +18,7 @@ export default function App() {
 		case 'Home':
 			pageComponent = <Home />;
 			break;
-		case 'About Me':
+		case 'About':
 			pageComponent = <AboutMe />;
 			break;
 		case 'Projects':

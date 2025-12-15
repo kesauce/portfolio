@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function Navbar({ activePage, handleClick }) {
-	const pages = ['Home', 'About Me', 'Projects', 'Contact'];
+	const pages = ['Home', 'About', 'Projects', 'Contact'];
 	const activeIndex = pages.indexOf(activePage);
 
 	const [hovered, setHovered] = useState(null);
