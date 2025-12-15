@@ -16,9 +16,16 @@ body{
 	padding: 0;
 }
 
+.page {
+  position: relative;
+}
+
 nav{
 	display: flex;
-	margin-top: 50px;
+	/* margin-top: 30px; */
+	position: relative;
+	height: 100px;
+	align-items: flex-end;
 }
 
 nav > button{
@@ -35,11 +42,26 @@ nav > button{
 	background-color: var(--crimson);
 	color: var(--pink);
 	border: 4px solid var(--white);
+
+	transition:
+		transform 200ms ease,
+		background-color 200ms ease,
+		padding-bottom 200ms ease,
+		margin-bottom 200ms ease;
 }
 
 nav > button:hover{
 	cursor: pointer;
 	background-color: black;
+	transform: translateY(-12px);
+	padding-bottom: 20px;
+  	margin-bottom: -12px;
+}
+
+.active-page{
+	border-bottom: 4px solid var(--pink);
+	background-color: var(--pink);
+	color: var(--crimson);
 }
 
 .main-content{

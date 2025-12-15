@@ -10,10 +10,10 @@ export default function App() {
 	}
 
   	return (
-    	<>
+    	<div className='page'>
 			<NavBar activePage={pageActive} handleClick={changePage}/>
     		<Body />
-		</>
+		</div>
   	)
 }
 
