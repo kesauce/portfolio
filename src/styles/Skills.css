@@ -1,14 +1,15 @@
 .skills-list{
     margin: 0px 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-self: start;
+    column-gap: 25px;
+    row-gap: 10px;
 }
 
-.skills-list > ul{
-    list-style: none;
-    font-size: large;
-}
-
-.skills-list li{
-    margin: 10px 20px;
+.skills-list > h1 {
+  grid-column: 1 / -1; /* make the first card span full width */
+  margin-bottom: 5px;
 }
 
 .sub-skill{
@@ -16,12 +17,29 @@
 }
 
 .github-link {
-  color: var(--crimson);
-  margin-right: 8px;
+  color: var(--white);
+  margin-left: 10px;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .github-link:hover {
   opacity: 0.5;
   transform: translateX(0);
+}
+
+.skill-card{
+    width: 100%;
+    color: var(--white);
+    border-radius: 5px;
+    border: 2px solid var(--crimson)
+}
+
+.skill-card h3{
+    margin: 0;
+    padding: 5px 20px;
+    background-color: var(--crimson);
+}
+
+.skill-card ul{
+    color: var(--crimson)
 }

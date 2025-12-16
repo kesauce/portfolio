@@ -1,6 +1,5 @@
 import '../styles/Skills.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import SkillCard from './SkillCard';
 
 export default function Skills() {
     const skills = [
@@ -51,40 +50,13 @@ export default function Skills() {
   return (
     <div className='skills-list'>
         <h1>Technical Skills</h1>
-        <ul className="work-sans-p">
-            {
-                skills.map(skill => {
-                    return(
-                        <li>
-                            {
-                                skill.link != null ? 
-                                <a
-                                    href={skill.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="github-link"
-                                >
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a> : undefined
-                            }
-
-                            {skill.skill}
-
-                            {
-                                skill.subSkill != null ?
-                                <ul>
-                                    {
-                                        skill.subSkill.map(sub => {
-                                            return(<li key={sub} className='sub-skill'>{sub}</li>)
-                                        })
-                                    }
-                                </ul> : undefined
-                            }
-                        </li>
-                    )
-                })
-            }
-        </ul>
+        {
+            skills.map(skill => {
+                return(
+                    <SkillCard key={skill.skill} skill={skill.skill} subskills={skill.subSkill} link={skill.link}/>
+                )
+            })
+        }
     </div>
   )
 }
