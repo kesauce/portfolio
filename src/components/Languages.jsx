@@ -9,7 +9,7 @@ export default function Languages() {
 		{language: 'Python', progress: '99%'},
 		{language: 'SQL', progress: '90%'},
 		{language: 'PHP', progress: '80%'},
-		{language: 'WRAMP Assembly', progress: '70%'},
+		{language: 'WRAMP', progress: '70%'},
 		{language: 'C', progress: '70%'},
 		{language: 'Verilog', progress: '70%'},
 		{language: 'R', progress: '60%'},

@@ -31,9 +31,7 @@ export default function Projects() {
     <section className='main-content project'>
         <Splide options={ {
           perPage: 2,
-          height : '71vh',
           rewind : true,
-          gap    : '1rem',
 		  perMove: 2,
         }}>
 			{
