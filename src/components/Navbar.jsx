@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../styles/NavBar.css';
 
 export default function Navbar({ activePage, handleClick }) {
 	const pages = ['Home', 'About', 'Projects', 'Contact'];

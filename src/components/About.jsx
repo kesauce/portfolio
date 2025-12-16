@@ -1,5 +1,6 @@
 import Languages from "./Languages";
 import Skills from "./Skills";
+import '../styles/About.css';
 
 export default function About() {
 

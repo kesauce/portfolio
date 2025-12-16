@@ -1,0 +1,21 @@
+.about{
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	color: var(--rose);
+}
+
+.about h1{
+	color: var(--crimson-dark);
+}
+
+.about > h1{
+	margin: 0
+}
+
+.list-sections{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

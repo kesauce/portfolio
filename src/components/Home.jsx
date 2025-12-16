@@ -1,10 +1,11 @@
 import portrait from '../assets/images/portrait.png'
+import '../styles/Home.css';
+
 export default function Home() {
 
   return (
     <section className='main-content'>
 		<div className='introduction'>
-			{/* <h1>Alexis Mañosca</h1>  */}
 			<h1>Alexis Manosca</h1>
 			<h6 className='work-sans-p'>3rd Year Computer Science Student</h6>
 			<p className='work-sans-p'>

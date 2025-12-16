@@ -10,6 +10,7 @@
 .skills-list > h1 {
   grid-column: 1 / -1; /* make the first card span full width */
   margin-bottom: 5px;
+  color: var(--crimson-dark);
 }
 
 .sub-skill{
@@ -41,5 +42,5 @@
 }
 
 .skill-card ul{
-    color: var(--crimson)
+    color: var(--rose)
 }
