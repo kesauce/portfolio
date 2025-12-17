@@ -14,8 +14,8 @@
 }
 
 @font-face {
-  font-family: 'Bright';
-  src: url('./assets/font/Bright.otf');
+  	font-family: 'Bright';
+  	src: url('./assets/font/BrightDEMO.woff2') format('woff2');
 }
 
 body{
@@ -33,7 +33,7 @@ body{
 	margin: 0;
 	background-color: var(--pink);
 	height: 80vh;
-	overflow: scroll;
+	overflow: auto;
 
 	display: flex;
 	flex-direction: row;
