@@ -1,0 +1,118 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact h1{
+    color: var(--crimson-dark);
+    font-size: 6rem;
+}
+
+.contact h6{
+    color: var(--crimson);
+    font-size: medium;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.contact h3{
+    color: var(--crimson-dark);
+    margin: 10px 0px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.contact-form input, textarea{
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-family: "Work Sans", sans-serif;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--crimson-dark);
+    border-right: 2px solid var(--crimson-dark);
+    border-top: 2px solid var(--crimson);
+    border-left: 2px solid var(--crimson);
+}
+
+.contact-form textarea{
+    max-width: 95%;
+    min-height: 20vh;
+}
+
+.button-45 {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 11px;
+    color: var(--crimson-dark);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    padding: 2px 12px;
+    text-align: center;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+}
+
+
+.button-45:active {
+    background-color: var(--crimson-dark);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: var(--white);
+}
+
+.button-45:hover {
+    background-color: var(--white);
+    border-color: var(--crimson-dark);
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+    background-color: var(--crimson-dark);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: var(--white);
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-link{
+    font-family: 'Work sans';
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+    margin: 10px 20px;
+    position: relative;
+}
+
+.social-link:before {
+    position: absolute;
+    margin: 0 auto;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--crimson-dark);
+    content: '';
+    opacity: .3;
+    -webkit-transform: scaleX(.9);
+    transform: scaleX(.9);
+    transition-property: opacity, -webkit-transform;
+    transition-duration: .3s;
+}
+
+.social-link:hover:before {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
