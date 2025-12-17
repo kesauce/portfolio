@@ -1,12 +1,17 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
 import '../styles/Project.css'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import ProjectCard from './ProjectCard';
 import conchatImage from '../assets/images/conchat.png';
 import teenyKitchenImage from '../assets/images/teenykitchen.png';
 import nlpImage from '../assets/images/natural_language_processing.png'
 import graphImage from '../assets/images/graphs.png';
-import chaserImage from '../assets/images/chaser.jpg'
+import chaserImage from '../assets/images/chaser.jpg';
+import parkImage from '../assets/images/parkapp.png';
+import udpImage from '../assets/images/udp.png';
 
 export default function Projects() {
 	const projects = [
@@ -48,7 +53,7 @@ export default function Projects() {
 		},
 		{
 			name: 'Chaser',
-			description: "A game with a bouncing light, implemented on a FPGA. Speed it up, slow it down, or add boundaries using the switches.",
+			description: "A game with a bouncing light, implemented on a FPGA. Speed it up, slow it down, or add boundaries using the buttons and switches.",
 			link: '',
 			tools: ['FPGA Design', 'Hardware', ''],
 			image: chaserImage,
@@ -56,34 +61,52 @@ export default function Projects() {
 			imageY: '70%'
 		},
 		{
-			name: 'Android Park App',
-			description: "A real-time park locator application. Use your location to find nearby parks and information on them.",
-			link: '',
-			tools: ['FPGA Design', 'Hardware', ''],
-			image: chaserImage,
+			name: 'Park Info',
+			description: "A real-time park locator application. Use your location to find nearby parks and information on them. Uses Google Maps and Places API for accurate data and location services for relative parks.",
+			link: 'https://github.com/kesauce/COMPX202_Assignment3',
+			tools: ['APIs', 'Group Collaboration', 'Mobile Software'],
+			image: parkImage,
 			imageX: '50%',
-			imageY: '70%'
+			imageY: '20%'
+		},
+		{
+			name: 'File Download',
+			description: "A real-time park locator application. Use your location to find nearby parks and information on them. Uses Google Maps and Places API for accurate data and location services for relative parks.",
+			link: 'https://github.com/kesauce/COMPX234_Assignment3',
+			tools: ['UDP', 'Datagram Sockets', 'Networking'],
+			image: udpImage,
+			imageX: '50%',
+			imageY: '100%'
 		}
 	];
 
   return (
-    <section className='main-content project'>
-        <Splide options={ {
-          perPage: 2,
-          rewind : true,
-		  perMove: 1,
-        }}>
-			{
-			projects.map(project => {
-				return(
-					<SplideSlide key={project.name}>
-						<ProjectCard name={project.name} description={project.description} link={project.link} tools={project.tools} image={project.image} imageX={project.imageX} imageY={project.imageY}/>
-					</SplideSlide>
-					
-				)
-			})
-		}
-		</Splide>
+    <section className='main-content'>
+		<Swiper
+			modules={[Navigation, Pagination]}
+			cssMode={true}
+			loop={true}
+			pagination={{ clickable: true }}
+			navigation={true}
+			breakpoints={{
+				0: { slidesPerView: 1 },
+				1024: { slidesPerView: 2 },
+			}}
+			>
+			{projects.map((project) => (
+				<SwiperSlide key={project.name}>
+				<ProjectCard
+					name={project.name}
+					description={project.description}
+					link={project.link}
+					tools={project.tools}
+					image={project.image}
+					imageX={project.imageX}
+					imageY={project.imageY}
+				/>
+				</SwiperSlide>
+			))}
+    	</Swiper>
     </section>
   )
 }
