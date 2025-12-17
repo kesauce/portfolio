@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export default function Contact() {
 	const [state, handleSubmit] = useForm("xgvggvpl");
 
-  	return (
+	return (
 		<section className='main-content contact'>
 			<h1>Get In Touch</h1>
 			<h6>Open to internships and roles!</h6>
@@ -15,23 +15,23 @@ export default function Contact() {
 				<h3><FontAwesomeIcon icon={faEnvelope} />Email Me</h3>
 				<input
 					id="name"
-					type="text" 
+					type="text"
 					name="name"
 					placeholder='Name'
 				/>
-				<ValidationError 
-					prefix="Name" 
+				<ValidationError
+					prefix="Name"
 					field="name"
 					errors={state.errors}
 				/>
 				<input
 					id="email"
-					type="email" 
+					type="email"
 					name="email"
 					placeholder='Email'
 				/>
-				<ValidationError 
-					prefix="Email" 
+				<ValidationError
+					prefix="Email"
 					field="email"
 					errors={state.errors}
 				/>
@@ -40,12 +40,12 @@ export default function Contact() {
 					name="message"
 					placeholder='Message'
 				/>
-				<ValidationError 
-					prefix="Message" 
+				<ValidationError
+					prefix="Message"
 					field="message"
 					errors={state.errors}
 				/>
-				<button className='button-45'type="submit" disabled={state.submitting}>Submit</button>
+				<button className='submit-button' type="submit" disabled={state.submitting}>Submit</button>
 			</form>
 			{
 				state.succeeded ? <h3>Thanks! I'll get back to you as soon as I can.</h3> : undefined

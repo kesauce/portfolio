@@ -1,34 +1,34 @@
-.introduction{
-	height: 100%;
-	width: 50%;
-	color: var(--crimson);
-	
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	height: 100%;
+.introduction {
+  height: 100%;
+  width: 50%;
+  color: var(--crimson);
 
-	padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  padding: 0px 10px;
 }
 
-.introduction > h1{
-	font-size: 6.5rem;
-	color: var(--crimson-dark);
-	margin: 0;
+.introduction>h1 {
+  font-size: 6.5rem;
+  color: var(--crimson-dark);
+  margin: 0;
 }
 
-.introduction > h6{
-	font-size: 1rem;
-	margin: 0;
-	margin-top: -20px;
+.introduction>h6 {
+  font-size: 1rem;
+  margin: 0;
+  margin-top: -20px;
 }
 
-.introduction > p{
-	font-size: 1.2rem;
-	font-style: bold;
-	text-align: justify;
-	color: var(--rose);
+.introduction>p {
+  font-size: 1.2rem;
+  font-style: bold;
+  text-align: justify;
+  color: var(--rose);
 }
 
 .btn2 {
@@ -95,6 +95,6 @@
   background-color: transparent;
 }
 
-.portrait{
-	width: 25%;
+.portrait {
+  width: 25%;
 }
