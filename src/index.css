@@ -13,13 +13,14 @@
   font-style: normal;
 }
 
-@font-face {
-  	font-family: 'Bright';
-  	src: url('./assets/font/BrightDEMO.woff2') format('woff2');
+.agbalumo-regular {
+  font-family: "Agbalumo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body{
-	font-family: 'Bright', 'sans-serif';
+	font-family: "Agbalumo", sans-serif;
 	background-color: var(--white);
 	margin: 0;
 	padding: 0;

@@ -13,7 +13,7 @@
 }
 
 .introduction > h1{
-	font-size: 7rem;
+	font-size: 6.5rem;
 	color: var(--crimson-dark);
 	margin: 0;
 }
@@ -41,7 +41,7 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Work Sans", sans-serif;
   transition: 0.3s;
   background-color: transparent;
   cursor: pointer;

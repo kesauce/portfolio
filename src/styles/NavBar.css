@@ -6,8 +6,8 @@ nav{
 }
 
 nav > button{
-	font-family: 'Bright', 'sans-serif';
-	font-size: x-large;
+	font-family: "Agbalumo", sans-serif;
+	font-size: large;
 	padding: 5px 10px;
 	flex: 1;
 	max-width: 200px;

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className='main-content'>
 		<div className='introduction'>
-			<h1>Alexis Manosca</h1>
+			<h1 className='agbalumo-regular'>Alexis Mañosca</h1>
 			<h6 className='work-sans-p'>3rd Year Computer Science Student</h6>
 			<p className='work-sans-p'>
 				Hi! I'm Alexis. I'm studying Computer Science at the University of Waikato. I enjoy creating things
