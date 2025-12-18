@@ -34,7 +34,7 @@ body {
 	margin: 0;
 	background-color: var(--pink);
 	height: 80vh;
-	overflow: auto;
+	overflow: hidden;
 
 	display: flex;
 	flex-direction: row;

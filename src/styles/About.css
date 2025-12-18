@@ -3,6 +3,7 @@
 	align-items: flex-start;
 	justify-content: space-between;
 	color: var(--rose);
+	overflow: auto;
 }
 
 .about h1{
