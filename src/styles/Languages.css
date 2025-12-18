@@ -52,3 +52,9 @@
         max-width: 400px;    /* optional max width */
     }
 }
+
+@media (max-width: 450px) {
+	.progress-bar{
+		width: 140px;
+	}
+}

@@ -13,7 +13,7 @@
 }
 
 .introduction>h1 {
-	font-size: 6.5rem;
+	font-size: 6.5vw;
 	color: var(--crimson-dark);
 	margin: 0;
 }
@@ -21,11 +21,10 @@
 .introduction>h6 {
 	font-size: 1rem;
 	margin: 0;
-	margin-top: -20px;
 }
 
 .introduction>p {
-	font-size: 1.2rem;
+	font-size: 1.5vw;
 	font-style: bold;
 	text-align: justify;
 	color: var(--rose);
@@ -97,4 +96,31 @@
 
 .portrait {
 	width: 25%;
+}
+
+@media (max-width: 800px) {
+	.main-content.home{
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.introduction{
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	.portrait{
+		width: 40vw;
+	}
+
+	.introduction h1{
+		font-size: 2.9rem;
+	}
+	.introduction p{
+		font-size: 1rem;
+	}
+
+	.cv-button{
+		font-size: 1.5rem;
+	}
 }

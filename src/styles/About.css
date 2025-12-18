@@ -7,9 +7,6 @@
 
 .about h1{
 	color: var(--crimson-dark);
-}
-
-.about > h1{
 	margin: 0
 }
 
@@ -24,4 +21,11 @@
 	.list-sections{
 		flex-direction: column;
 	}
+}
+
+@media (max-width: 450px) {
+	.about h1{
+		font-size: 1.9rem;
+	}
+	
 }

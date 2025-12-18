@@ -9,7 +9,7 @@ export default function Home() {
 	};
 
 	return (
-		<section className='main-content'>
+		<section className='main-content home'>
 			<div className='introduction'>
 				<h1 className='agbalumo-regular'>Alexis Mañosca</h1>
 				<h6 className='work-sans-p'>3rd Year Computer Science Student</h6>

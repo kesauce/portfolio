@@ -55,7 +55,7 @@ export default function Projects() {
 			name: 'Chaser',
 			description: "A game with a bouncing light, implemented on a FPGA. Speed it up, slow it down, or add boundaries using the buttons and switches.",
 			link: '',
-			tools: ['FPGA Design', 'Hardware', ''],
+			tools: ['FPGA Design', 'Hardware', 'Verilog'],
 			image: chaserImage,
 			imageX: '50%',
 			imageY: '70%'

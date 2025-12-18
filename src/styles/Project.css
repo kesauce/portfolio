@@ -26,7 +26,8 @@ section.main-content .swiper-button-prev{
 
 .project-card h1{
 	color: var(--white);
-	font-size: 3.5rem;
+	/* font-size: 3.5rem; */
+	font-size: clamp(2rem, 4vw, 3.5rem);
 	text-align: center;
 	margin: 0;
 }
@@ -50,6 +51,7 @@ section.main-content .swiper-button-prev{
 .info-container p{
 	color: var(--white);
 	margin: 5px;
+	font-size: clamp(0.8rem, 4vw, 1rem);
 }
 
 .info-container{
@@ -58,7 +60,8 @@ section.main-content .swiper-button-prev{
 }
 
 .info-container ul{
-	color: var(--white)
+	color: var(--white);
+	font-size: clamp(0.8rem, 4vw, 1rem);
 }
 
 .project-link{
