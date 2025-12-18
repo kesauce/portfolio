@@ -37,7 +37,6 @@
 	border-radius: inherit;
 	background: currentColor;
 	animation: l6 2s ease-out 1 forwards;
-	/* Run once then stop */
 }
 
 @keyframes l6 {
@@ -48,13 +47,17 @@
 
 @media (max-width: 1180px) {
     .language-list li {
-        width: 90%;          /* shrink li on smaller screens */
-        max-width: 400px;    /* optional max width */
+        width: 90%;
+        max-width: 400px;
     }
+
+	.progress-bar{
+		width: 150px;
+	}
 }
 
 @media (max-width: 450px) {
 	.progress-bar{
-		width: 140px;
+		width: 33vw;
 	}
 }
