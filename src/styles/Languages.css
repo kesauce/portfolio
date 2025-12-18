@@ -7,6 +7,7 @@
 	list-style: square;
 	font-size: large;
 	padding: 0;
+	width: 100%;
 }
 
 .language-list li {
@@ -43,4 +44,11 @@
 	100% {
 		inset: 0 calc(100% - var(--progress)) 0 0;
 	}
+}
+
+@media (max-width: 1180px) {
+    .language-list li {
+        width: 90%;          /* shrink li on smaller screens */
+        max-width: 400px;    /* optional max width */
+    }
 }

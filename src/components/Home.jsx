@@ -1,10 +1,11 @@
 import portrait from '../assets/images/portrait.png'
+import cv from '../assets/AMCV.pdf';
 import '../styles/Home.css';
 
 export default function Home() {
 
 	const handlePDF = () => {
-		window.open('src/assets/AMCV.pdf', '_blank');
+		window.open(cv, '_blank');
 	};
 
 	return (
@@ -19,7 +20,7 @@ export default function Home() {
 
 					I'm interested in web development, networking, AI, and cyber security.
 				</p>
-				<button onClick={handlePDF} className='btn2'><span className='spn2'>Download my CV</span></button>
+				<button onClick={handlePDF} className='cv-button'><span className='cv-span'>Download my CV</span></button>
 			</div>
 
 			<img src={portrait} className='portrait' />

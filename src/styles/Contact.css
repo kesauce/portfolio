@@ -6,7 +6,7 @@
 
 .contact h1 {
     color: var(--crimson-dark);
-    font-size: 6rem;
+    font-size: clamp(3rem, 8vw, 6.5rem);
 }
 
 .contact h6 {
@@ -24,11 +24,12 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 50vw;
+    min-width: 300px;
 }
 
 .contact-form input,
-textarea {
+.contact-form textarea{
     font-size: 15px;
     padding: 5px 10px;
     margin-bottom: 10px;
@@ -41,11 +42,21 @@ textarea {
 }
 
 .contact-form textarea {
-    max-width: 95%;
+    width: 100%;
+    box-sizing: border-box;
     min-height: 20vh;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--crimson);
+    outline: none;
+    box-shadow: 0 0 5px var(--crimson);
 }
 
 .submit-button {
+    width: 60%;
     background-color: var(--white);
     border: 1px solid var(--white);
     border-radius: 11px;
@@ -57,6 +68,7 @@ textarea {
     padding: 2px 12px;
     text-align: center;
     transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    margin: 0 auto;
 }
 
 

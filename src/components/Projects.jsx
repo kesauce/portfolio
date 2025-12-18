@@ -71,7 +71,7 @@ export default function Projects() {
 		},
 		{
 			name: 'File Download',
-			description: "A real-time park locator application. Use your location to find nearby parks and information on them. Uses Google Maps and Places API for accurate data and location services for relative parks.",
+			description: "A file download service where you can request a file from a server to download. Cleanly and reliably download files using UDP and error catching.",
 			link: 'https://github.com/kesauce/COMPX234_Assignment3',
 			tools: ['UDP', 'Datagram Sockets', 'Networking'],
 			image: udpImage,
