@@ -17,8 +17,9 @@
 }
 
 .about-images img{
-	height: 40vh;
+	width: 30vw;
 	border-radius: 15px;
+	min-width: 300pxs;
 }
 
 .list-sections{
