@@ -11,13 +11,14 @@
 	margin: 0
 }
 
-.about img{
-	width: 40vw;
+.about-images{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.about-images img{
+	height: 40vh;
 	border-radius: 15px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 300px;
 }
 
 .list-sections{
