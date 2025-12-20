@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/kesauce/portfolio">
+  <a href="https://alexismanosca.pages.dev">
     <img width="90" height="180" alt="icon180" src="https://github.com/user-attachments/assets/adaa190e-bf72-4b2e-9852-35765325b44f" />
   </a>
 
