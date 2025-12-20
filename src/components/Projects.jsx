@@ -12,6 +12,7 @@ import graphImage from '../assets/images/graphs.png';
 import chaserImage from '../assets/images/chaser.jpg';
 import parkImage from '../assets/images/parkapp.png';
 import udpImage from '../assets/images/udp.png';
+import portfolioImage from '../assets/images/portfolio.png';
 
 export default function Projects() {
 	const projects = [
@@ -76,6 +77,15 @@ export default function Projects() {
 			tools: ['UDP', 'Datagram Sockets', 'Networking'],
 			image: udpImage,
 			imageX: '50%',
+			imageY: '100%'
+		},
+		{
+			name: 'Portfolio Website',
+			description: "The very website you're on right now! Protoyped and designed in Canva then built with React. This website showcases my personality and skills as a programmer.",
+			link: 'https://github.com/kesauce/portfolio',
+			tools: ['React', 'UI Design', 'UX Design'],
+			image: portfolioImage,
+			imageX: '10%',
 			imageY: '100%'
 		}
 	];

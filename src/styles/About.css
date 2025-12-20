@@ -22,6 +22,10 @@
 	min-width: 300px;
 }
 
+.about p{
+	text-align: justify;
+}
+
 .list-sections{
 	width: 100%;
 	display: flex;
