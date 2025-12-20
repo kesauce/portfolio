@@ -20,7 +20,7 @@ export default function Projects() {
 			name: 'ConChat',
 			description: 'A simple customisable console chatroom. Select a username, colour, and room, and begin chatting! Choose from 5 public chatrooms or create your own private room to meet other users. Up to 50 messages are saved so you can keep up with the conversations. Easy for anyone to use!',
 			link: 'https://github.com/kesauce/conchat',
-			tools: ['Node.js', 'Vite', 'Node Package Manager', 'Docker'],
+			tools: ['Node.js', 'Websockets', 'Docker'],
 			image: conchatImage,
 			imageX: '0%',
 			imageY: '100%'
@@ -29,10 +29,10 @@ export default function Projects() {
 			name: 'Teeny Kitchen',
 			description: "A cute cooking game where you guess Nova's favourite food! Combine ingredients in different ways but be careful, if you fail to guess, then Nova leaves.",
 			link: 'https://github.com/kesauce/teenykitchen',
-			tools: ['Phaser Library', 'Vite'],
+			tools: ['Phaser Library', 'Vite', 'Game Design'],
 			image: teenyKitchenImage,
 			imageX: '50%',
-			imageY: '100%'
+			imageY: '70%'
 		},
 		{
 			name: 'Natural Language Processing',
@@ -50,7 +50,7 @@ export default function Projects() {
 			tools: ['Graph Data Structure', 'JUnit Testing', 'Search Algorithms'],
 			image: graphImage,
 			imageX: '0%',
-			imageY: '0%'
+			imageY: '100%'
 		},
 		{
 			name: 'Chaser',
@@ -63,12 +63,12 @@ export default function Projects() {
 		},
 		{
 			name: 'Park Info',
-			description: "A real-time park locator application. Use your location to find nearby parks and information on them. Uses Google Maps and Places API for accurate data and location services for relative parks.",
+			description: "A real-time park locator mobile application. Use your location to find nearby parks and information on them. Uses Google Maps and Places API for accurate data and location services for relative parks.",
 			link: 'https://github.com/kesauce/COMPX202_Assignment3',
 			tools: ['APIs', 'Group Collaboration', 'Mobile Software'],
 			image: parkImage,
 			imageX: '50%',
-			imageY: '20%'
+			imageY: '5%'
 		},
 		{
 			name: 'File Download',
@@ -86,7 +86,7 @@ export default function Projects() {
 			tools: ['React', 'UI Design', 'UX Design'],
 			image: portfolioImage,
 			imageX: '10%',
-			imageY: '100%'
+			imageY: '50%'
 		}
 	];
 
